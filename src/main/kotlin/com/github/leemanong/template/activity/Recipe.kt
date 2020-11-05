@@ -50,7 +50,7 @@ fun RecipeExecutor.fragmentSetup(
     if (!resFile.exists()) {
         resFile.mkdirs()
     }
-    someActivityLayout(packageName, entityName)
+    someFragmentLayout(packageName, entityName)
             .save(resFile, "${layoutName.toLowerCase()}.xml",project)
 }
 
